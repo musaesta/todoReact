@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+html,
+body {
+	min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: #e4e5e7;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.aside {
+	height: 400px;
+}
+.main {
+	height: 400px;
+}
+.d-flex {
+	display: flex;
+}
+.task-title {
+	font-weight: 400;
+	padding-top: 5px;
+}
+.gray {
+	color: #bdbdbd;
+}
+.task-title--done {
+	text-decoration: line-through;
+	color: #cdcdcd;
+}
+.task-item__buttons {
+	display: flex;
+	column-gap: 5px;
+}
+.notify-holder {
+	height: 60px;
+	margin-bottom: 20px;
+}
+.empty-list {
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.empty-list__title {
+	font-size: 28px;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+.empty-list__icon {
+	color: #42be2a;
+	font-size: 32px;
+}
+.btn-action {
+	background-color: #e0e5ea;
+	padding: 8px 10px;
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	transition: opacity 0.2s ease-in;
+	opacity: 0.5;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-action:hover {
+	background-color: #e0e5ea;
+	opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-action img {
+	pointer-events: none;
 }
 
-.App-link {
-  color: #61dafb;
+.none {
+	display: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.float-right {
+	float: right;
 }
